@@ -10,8 +10,8 @@ const form = (props) =>{
     }
     const submitTodoHandler = (event) =>{
         event.preventDefault();
-        props.setTodo([
-            ...props.toDo,{text:props.inputText,completed:false,id:Math.random()*1000}
+        props.setTodos([
+            ...props.toDos,{text:props.inputText,completed:false,id:Math.random()*1000}
         ]);
         props.setInputText("");
 

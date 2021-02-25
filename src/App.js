@@ -6,7 +6,7 @@ import TodoList from './TodoList/TodoList';
 function App(props) {
 
   const [inputText,setInputText] = useState("");
-  const [toDo,setTodo] = useState([]);
+  const [toDos,setTodos] = useState([]);
   
     return (
       <div className="App">
@@ -16,9 +16,9 @@ function App(props) {
         <Form 
         inputText = {inputText}
          setInputText = {setInputText} 
-         toDo={toDo}
-         setTodo={setTodo}/>
-        <TodoList />
+         toDos={toDos}
+         setTodos={setTodos}/>
+        <TodoList toDos={toDos} setTodos={setTodos}/>
       </div>
     );
   
